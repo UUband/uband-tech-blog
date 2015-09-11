@@ -1,6 +1,14 @@
 # Java编程风格指南
 
+```
+@author: yiliang.gyl
+@update: 2015-09-09
+```
+
+
 ## 1. 导引
+
+本文概述了 404 团队编写 Java 代码的一些规范。
 
 ### 为什么统一风格
 
@@ -23,7 +31,7 @@
 
 	build 时验证代码风格插件（也有eclipse插件版本）
 	
-## 内容	
+## 2. Java 代码编写规范
 	
 ### 基本要求
 
@@ -87,9 +95,11 @@
 ![](images/code-format-2.png)
 
 
-## AutoDoc
+## 3. 插件 
 
-### 安装
+
+
+### AutoDoc 的安装和使用
 
 **Url地址:** http://jautodoc.sourceforge.net/update/
 
@@ -97,11 +107,11 @@
 
 ![](images/jautodoc-ins.png)
 
-### 快捷键
+#### 快捷键
 
 Mac: alt + control + J (把光标移动到类名上面按下，会有惊喜额）
 
-### 修改生成的注释
+#### 修改生成的注释
 
 原则:
 
@@ -110,10 +120,12 @@ Mac: alt + control + J (把光标移动到类名上面按下，会有惊喜额�
 * 关键变量必须用中文注释
 
 
-## checkStyle
+### checkStyle 插件的使用
 
 * 每次提交代码的时候要build，查看是否有未处理的 checkStyle 问题
 * 每周会集中处理
+
+....待更新....
 
 
 
