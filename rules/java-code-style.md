@@ -78,7 +78,7 @@
 
 #### 导入 template 文件
 
-[下载地址](src/404codeTemplates.xml)
+[下载地址](src/404codetemplates.xml)
 ![](images/code-template.png)
 
 设置自己的名字:
