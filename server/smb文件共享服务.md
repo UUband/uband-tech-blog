@@ -1,4 +1,4 @@
-CentOS 6.3下Samba服务器的安装与配置(http://www.cnblogs.com/mchina/archive/2012/12/18/2816717.html)
+[CentOS 6.3下Samba服务器的安装与配置](http://www.cnblogs.com/mchina/archive/2012/12/18/2816717.html)
 #1. 安装Samba
 yum -y install samba samba-client
 
