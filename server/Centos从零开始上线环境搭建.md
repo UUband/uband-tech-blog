@@ -1,6 +1,6 @@
 # Centos从零开始上线环境搭建
 
-这篇文章教你如何搭建一台用户配置 python 脚本的上线 centos 环境，机器是一台虚拟主机，版本是Linux 2.6.32-431.el6.x86_64.  Centos 6.5 版本。 
+这篇文章教你如何搭建一台用户配置 python 脚本的上线 centos 环境，机器是一台虚拟主机，版本是Linux 2.6.32-431.el6.x86_64.  Centos 6.5 版本。
 
 ## 1. 基础环境更新
 
@@ -45,7 +45,7 @@ or
 /usr/libexec/iptables/iptables.init save
 ```
 
-关闭 SELINUX	
+关闭 SELINUX
 ```
 vi /etc/selinux/config
 #SELINUX=enforcing #注释掉
@@ -157,11 +157,8 @@ $ ssh-keygen -C 'Email地址' -t rsa
 //一路默认，然后copy .ssh下的pub进入github
 
 ```
-
+how-to-install-the-latest-git-version-on-centos(https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos)
 
 ### 第一个 flask 应用
 
 我们使用一个 flask
-
-
-
