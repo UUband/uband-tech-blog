@@ -433,9 +433,65 @@ String.raw方法，往往用来充当模板字符串的处理函数，返回一�
 //TODO: 再学习一个。
 
 #### 数值的扩展
+###### Number对象
+
+* isFinite()
+* isNaN()
+* Number.parseInt(), Number.parseFloat()
+* Number.isInteger()
+* Number.EPSILON - 极小误差
+* toFixed(x) - 四舍五入为小数位数x，x范围0 ~ 20，默认0
+* Number.isSafeInteger() - 准确整数范围
+* Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER - 准确整数上下界
+
+* Math.trunc()
+* Math.sign() - 判断正\负\零
+* Math.cbrt() - 立方根
+* Math.clz32() - 返回一个数的32位无符号整数形式有多少个前导0
+* Math.imul() - 返回准确的低位(32位)数值
+* Math.fround() - 返回一个数的单精度浮点数形式
+* Math.hypot() - 返回所有参数的平方和的平方根
+
+* Math.expm1(x) - Math.exp(x) - 1
+* Math.log1p(x) - Math.log(1 + x)
+* Math.log10(x)
+* Math.log2(x)
+
+* Math.sinh(x) 返回x的双曲正弦（hyperbolic sine）
+* Math.cosh(x) 返回x的双曲余弦（hyperbolic cosine）
+* Math.tanh(x) 返回x的双曲正切（hyperbolic tangent）
+* Math.asinh(x) 返回x的反双曲正弦（inverse hyperbolic sine）
+* Math.acosh(x) 返回x的反双曲余弦（inverse hyperbolic cosine）
+* Math.atanh(x) 返回x的反双曲正切（inverse hyperbolic tangent）
 
 //TODO: 再学习一个。
 #### 数组的扩展
+
+* Array.from() - 将部署了Iterator接口的数据结构转为数组
+* Array.of() - 将一组值转换为数组
+* copyWithin(target, start = 0, end = this.length)
+* find(), findIndex()
+* fill() - 填充数组
+* entries(), keys(), values()
+```
+for (let index of ['a', 'b'].keys()) {
+  console.log(index);
+}
+// 0
+// 1
+
+for (let elem of ['a', 'b'].values()) {
+  console.log(elem);
+}
+// 'a'
+// 'b'
+
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 "a"
+// 1 "b"
+```
 
 //TODO: 再学习一个。
 #### 函数的扩展
