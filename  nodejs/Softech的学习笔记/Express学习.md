@@ -30,3 +30,41 @@ Windows :
 ```
 #### 查看
 [http://localhost:3000/](http://localhost:3000/)
+
+***
+
+#### 结构
+
+app.js为入口，包括顶级路由。
+routes文件夹下放次级路由。
+views文件夹下放页面文件，jade格式，支持block。
+
+Express 定义了如下和 HTTP 请求对应的路由方法：
+* get
+* post
+* put
+* head
+* delete
+* options
+* trace
+* copy
+* lock
+* mkcol
+* move
+* purge
+* propfind
+* proppatch
+* unlock
+* report
+* mkactivity
+* checkout
+* merge
+* m-search
+* notify
+* subscribe
+* unsubscribe
+* patch
+* search
+* connect
+
+*其他部分在实践中慢慢练习。*
