@@ -26,7 +26,7 @@ $ DEBUG=myapp npm start
 ```
 Windows :
 ```
-/> set DEBUG=myapp & npm start
+\> set DEBUG=myapp & npm start
 ```
 #### 查看
 [http://localhost:3000/](http://localhost:3000/)
