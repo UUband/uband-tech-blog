@@ -159,6 +159,11 @@ $ ssh-keygen -C 'Email地址' -t rsa
 ```
 how-to-install-the-latest-git-version-on-centos(https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos)
 
-### 第一个 flask 应用
+### node 环境
+```
+yum install epel-release
 
-我们使用一个 flask
+sudo yum install nodejs
+
+sudo yum install npm
+```
