@@ -107,12 +107,17 @@ GitHub服务提供商提供了Git服务，这是一个强大的版本控制系�
 
 第二步：选择源分支和你要合并到的分支
 ![](images/github-pr-02.png)
+
 **注意：如果有冲突，请先解决冲突**
 
 第三步：写下pr的信息
 ![](images/github-pr-03.png)
+
 **注意：如果有冲突，请先解决冲突**
 
 
 ## 任务
 去[xiaoguotech-internship](https://github.com/myhelloos/xiaoguotech-internship)项目，新建一个分支，在[self-introduction.md](https://github.com/myhelloos/xiaoguotech-internship/blob/master/self-introduction.md)文件中添加自己的信息并提交一个pr
+
+## 附录：
+[markdown 教程](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
