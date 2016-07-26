@@ -426,23 +426,119 @@ tag(['Hello ', ' world ', '''], 15, 50);
 
 String.raw方法，往往用来充当模板字符串的处理函数，返回一个斜杠都被转义（即斜杠前面再加一个斜杠）的字符串，对应于替换变量后的模板字符串。
 
-
 #### 正则的扩展
+四个方法：match()、replace()、search()和split()。
+对于UTF-16编码使用u修饰符。
+
+//TODO: 再学习一个。
+
 #### 数值的扩展
+###### Number对象
+
+* isFinite()
+* isNaN()
+* Number.parseInt(), Number.parseFloat()
+* Number.isInteger()
+* Number.EPSILON - 极小误差
+* toFixed(x) - 四舍五入为小数位数x，x范围0 ~ 20，默认0
+* Number.isSafeInteger() - 准确整数范围
+* Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER - 准确整数上下界
+
+* Math.trunc()
+* Math.sign() - 判断正\负\零
+* Math.cbrt() - 立方根
+* Math.clz32() - 返回一个数的32位无符号整数形式有多少个前导0
+* Math.imul() - 返回准确的低位(32位)数值
+* Math.fround() - 返回一个数的单精度浮点数形式
+* Math.hypot() - 返回所有参数的平方和的平方根
+
+* Math.expm1(x) - Math.exp(x) - 1
+* Math.log1p(x) - Math.log(1 + x)
+* Math.log10(x)
+* Math.log2(x)
+
+* Math.sinh(x) 返回x的双曲正弦（hyperbolic sine）
+* Math.cosh(x) 返回x的双曲余弦（hyperbolic cosine）
+* Math.tanh(x) 返回x的双曲正切（hyperbolic tangent）
+* Math.asinh(x) 返回x的反双曲正弦（inverse hyperbolic sine）
+* Math.acosh(x) 返回x的反双曲余弦（inverse hyperbolic cosine）
+* Math.atanh(x) 返回x的反双曲正切（inverse hyperbolic tangent）
+
+//TODO: 再学习一个。
 #### 数组的扩展
+
+* Array.from() - 将部署了Iterator接口的数据结构转为数组
+* Array.of() - 将一组值转换为数组
+* copyWithin(target, start = 0, end = this.length)
+* find(), findIndex()
+* fill() - 填充数组
+* entries(), keys(), values()
+```
+for (let index of ['a', 'b'].keys()) {
+  console.log(index);
+}
+// 0
+// 1
+
+for (let elem of ['a', 'b'].values()) {
+  console.log(elem);
+}
+// 'a'
+// 'b'
+
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 "a"
+// 1 "b"
+```
+
+//TODO: 再学习一个。
 #### 函数的扩展
+
+//TODO: 再学习一个。
 #### 对象的扩展
+
+//TODO: 再学习一个。
 #### Symbol
+
+//TODO: 再学习一个。
 #### Proxy和Reflect
+
+//TODO: 再学习一个。
 #### 二进制数组
+
+//TODO: 再学习一个。
 #### Set和Map数据结构
+
+//TODO: 再学习一个。
 #### Iterator和for...of循环
+
+//TODO: 再学习一个。
 #### Generator函数
+
+//TODO: 再学习一个。
 #### Promise对象
+
+//TODO: 再学习一个。
 #### 异步操作和Async函数
+
+//TODO: 再学习一个。
 #### Class
+
+//TODO: 再学习一个。
 #### Decorator
+
+//TODO: 再学习一个。
 #### Module
+
+//TODO: 再学习一个。
 #### 编程风格
+
+//TODO: 再学习一个。
 #### 读懂规格
+
+//TODO: 再学习一个。
 #### 参考链接
+
+//TODO: 再学习一个。
