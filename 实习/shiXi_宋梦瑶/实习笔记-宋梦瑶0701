@@ -1,0 +1,98 @@
+#实习笔记-宋梦瑶
+
+##一、git常用命令
+
+###1、 push文件
+* 打开cmd窗口
+* 输入f:，进入f:（自己随便在自己的电脑上找个位置就行了，这里的f:，表示的是f盘）
+* 然后输入`mkdir workSpace`，会自动在f盘下生成一个`workSpace`文件夹
+* 然后输入`cd workSpace`，会自动进入`f:\workSpace`文件夹
+* 然后输入`git clone` + `空格` + `我的连接地址`，就开始拷贝了，结束后
+* 输入`cd shiXi`，创建shiXi文件夹
+* 把要拷贝的东西除了.git文件夹之外都拷贝到`shiXi`目录下
+* 在输入`git add .`
+* 在输入`git commit -m "上传"`
+* 在输入`git push`
+* 就ok了
+
+###2、push到其他文件里面
+* 如果在刚刚第一步的基础上想要进入其他仓库，输入`cd ..`
+* 在输入`git clone` + `空格` + `我的连接地址`
+* 然后重复上面的步骤即可
+
+###3、文件修改之后，重新上传
+比如哪个文件在本地修改之后，需要重新上传到github，需要如下命令：
+
+* 首先进入被修改的文件夹：`cd 文件夹的名字`
+* 输入`git push`
+* 输入`git add .` （.和add之间有空格）
+* 输入`git commit -m "修改"`
+* 输入`git push`
+* 就ok了
+
+###4、git其他命令
+* 创建提交记录：`git commit`
+* 创建分支：`git branch 要创建的分支的名字`
+* 切换到分支：`git checkout 切换到的分支的名字`
+* 分支合并1：`git mmerge 要合并的分支的名字A`（A分支合并到B分支）
+* 分支合并2：`git rebase 内容要移动到的分支`
+
+##二、JS重要知识点
+
+###1、闭包
+&emsp;&emsp;闭包就是能够读取其他函数内部变量的函数。由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成"定义在一个函数内部的函数"。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。`闭包的作用是为了防止全局变量泛滥`。
+
+*`使用闭包的注意点：`*
+
+* 1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。
+* 2）闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。
+
+###2、变量提升
+&emsp;&emsp;变量提升指的是在浏览器解析JS文件是，把定义的变量或者函数会先解析，然后在解析其他代码，也就是说，JS当中可以先使用变量，然后在定义。但是
+如果在定义变量的时候，给变量进行了初始化的话，该变量是不会被提升的！附：在es6代码规范中，必须先定义变量，才可以使用变量。
+
+###3、高阶函数
+&emsp;&emsp;高阶函数其实很简单，只要输出形式是print('hello')('world');的就行。例如：
+
+    javascript:
+    
+    var Moqi = function(p1){
+        this.add = function (p2){
+            return p1 + ' ' + p2;
+        };
+        return add;
+    };
+    
+    console.log(Moqi('Hello')('World'));
+    
+###4、Callback回调函数
+* jQuery Callback 函数
+
+    当动画 100% 完成后，即调用 Callback 函数。
+    
+    典型的语法：
+
+    `$(selector).hide(speed,callback);`
+    
+    callback参数是一个在 hide 操作完成后被执行的函数。
+    
+    错误（没有 callback）：
+    
+    $("p").hide(1000); alert("The paragraph is now hidden");
+    
+    正确（有 callback）:
+    
+    `$("p").hide(1000,function(){ alert("The paragraph is now hidden"); });`
+    
+    结论：如果您希望在一个涉及动画的函数之后来执行语句，请使用 callback 函数。
+
+    凡是由你设计却由windows系统呼叫的函数，统称为callback函数。某些API函数要求以callback作为你参数之一。
+    
+    如SetTimer，LineDDA，EnumObjects。回调函数是由开发者按照一定的原形进行定义的函数（每个回调函数都必须遵循这个原则来设计）
+    
+##三、react知识点总结
+
+###1、react的MDV框架
+* MDV框架：model driven 
+
+    
