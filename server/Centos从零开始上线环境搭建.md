@@ -167,3 +167,36 @@ sudo yum install nodejs
 
 sudo yum install npm
 ```
+
+### 安装 Redis
+
+```
+sudo yum install gcc-c++
+
+wget http://download.redis.io/releases/redis-4.0.6.tar.gz
+
+tar -zxvf redis-4.0.6.tar.gz
+
+cd redis-4.0.6
+
+make MALLOC=libc　
+
+cd src && make install
+
+
+```
+
+### 安装nodejs
+
+```
+yum install nodejs
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+
+
+
+
+
+

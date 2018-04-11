@@ -1,7 +1,33 @@
-# 404-blog
+# 友班的公开技术资源
 
 404 Team 公开资源
 
+
+## 这个是二级标题
+
+* 这个是list
+* 这个是list
+* 这个是list
+* 这个是list
+
+
+## 这个可以标记代码
+
+```python
+import sys
+
+def main():
+	print("hello world")
+
+```
+
+
+### 这个是三级标题
+
+test test test
+
+
+![http://qiniuprivate.gambition.cn/1521477720069_9rOFC9_WechatIMG236.jpeg]
 
 ## 开发
 
