@@ -189,14 +189,42 @@ cd src && make install
 ### 安装nodejs
 
 ```
+
+
+```
 yum install nodejs
 
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 
+---
 
+## 安装mongodb
 
+```
+创建yum源文件：
+vim /etc/yum.repos.d/mongodb-org-3.4.repo
+添加以下内容：
+[mongodb-org-3.4]  
+name=MongoDB Repository  
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/  
+gpgcheck=1  
+enabled=1  
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
 
+安装命令：
+yum -y install mongodb-org
 
+安装完成后
 
+查看mongo安装位置 whereis mongod
+
+查看修改配置文件 ： vim /etc/mongod.conf
+
+启动mongodb ：systemctl start mongod.service
+停止mongodb ：systemctl stop mongod.service
+
+查到mongodb的状态：systemctl status mongod.service
+
+```
